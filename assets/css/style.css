@@ -1,0 +1,117 @@
+body{
+  background-image: linear-gradient(#ff6161,#ff768c);
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  color: #0f222d;
+  background-size: auto;
+
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.todoAppContainer{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 100vh;
+
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/*
+--------------------------------------------FORM
+*/
+.formContainer {
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#taskInput{
+    flex-grow: 1;
+}
+/*
+--------------------------------------------BUTTON
+*/
+
+
+
+.flexItemButton{
+    flex-basis: 80px;
+    max-width: 120px;
+    flex-grow: 0.5;
+}
+
+.button{
+    box-sizing: border-box;
+    padding: 10px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.addButton{
+    background-color: #A2D13D;
+}
+
+.resetButton{
+    background-color: red;
+
+}
+
+input.taskInput {
+    border: 3px solid black;
+}
+
+
+
+
+/*list*/
+#tasksBoard {
+    margin-top: 60px;
+}
+
+#tasksBoard > #tasksList{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+#tasksBoard > #tasksList > .taskItem {
+    padding: 20px 80px;
+    margin-top: 5px;
+    background: #A2D13D;
+}
+
+#tasksBoard > #tasksList > .taskItem  > span {
+    color: white;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.clearButton {
+    background: red;
+}
+
