@@ -3,6 +3,7 @@
 const input = document.getElementById("taskInput");
 const tasksListElem = document.getElementById("tasksList");
 
+//загружаем каждое событие на странице
 loadEvents();
 
 function loadEvents(){
@@ -11,6 +12,7 @@ function loadEvents(){
   document.getElementById('clearButton').addEventListener('click', clearList);
 }
 
+//добавляем задание по кнопке
 function addTaskOnButton(e){
   e.preventDefault();
   if(input.value != '')
@@ -20,7 +22,7 @@ function addTaskOnButton(e){
 
 
 
-	function addTaskItem(task) {
+function addTaskItem(task) {
 	    const taskItemElem = document.createElement('li');
 	    taskItemElem.classList.add("taskItem");
 	   	const checkboxItemElem = document.createElement('input');
@@ -38,6 +40,7 @@ function resetTaskOnButton(e) {
     input.value = "";
 }
 
+//обнуляем поле ввода
 function clearList(e){
   tasksListElem.innerHTML = '';
 }
